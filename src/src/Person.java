@@ -4,12 +4,11 @@
 public class Person {
 
 
-    private String Name;    // The Persons Name
+    private String name;
 
-    private int phoneNumber;        // The Persons Phone Number
+    private int phoneNumber;
 
-    private String address;        // The Persons Address
-
+    private String address;
 
 
     public Person()
@@ -20,46 +19,46 @@ public class Person {
 
 
 
-    public Person (String n, int pn, String ad)
+    public Person (String name, int phoneNumber, String address)
 
     {
 
-        Name = n;
+        this.name=name;
 
-        phoneNumber = pn;
+        this.phoneNumber = phoneNumber;
 
-        address = ad;
+        this.address = address;
 
     }
 
-    public void setName(String n)
+    public void setName(String name)
 
     {
 
-        Name = n;
+        this.name=name;
 
     }
 
-    public void setidnumber(int pn)
+    public void setPhoneNumber(int phoneNumber)
 
     {
 
-        phoneNumber = pn;
+       this.phoneNumber = phoneNumber;
 
     }
 
-    public void setdepartmen(String ad)
+    public void setAddress(String address)
 
     {
 
-        address = ad;
+        this.address = address;
     }
 
     public String getName()
 
     {
 
-        return Name;
+       return name;
     }
 
     public int getphoneNumber()
