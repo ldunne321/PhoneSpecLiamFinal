@@ -1,67 +1,98 @@
+import javafx.scene.Camera;
+
 /**
  * Created by Liam on 17/11/2016.
  */
-public class PhoneSpec {
+public abstract class PhoneSpec {
 
 
-    private String brand;
-    private String model;
-    private int memory;
-    private String network;
-    private boolean camera;
 
-    public PhoneSpec(String brand, String model, int memory, String network, boolean camera){
+    public String brand;
+    final Model model;
+    final Memory memory;
+    final Network network;
+    final Camera camera;
 
-        this.brand=brand;
-        this.model=model;
-        this.memory=memory;
-        this.network=network;
-        this.camera=camera;
+    public PhoneSpec(){
+
+
     }
 
-    public String getBrand() {
-        return brand;
-    }
+    public PhoneSpec(Brand brand, Model model, Memory memory, Network network, Camera camera) {
 
-    public void setBrand(String brand) {
         this.brand = brand;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
         this.model = model;
-    }
-
-    public int getMemory() {
-        return memory;
-    }
-
-    public void setMemory(int memory) {
         this.memory = memory;
-    }
-
-    public String getNetwork() {
-        return network;
-    }
-
-    public void setNetwork(String network) {
         this.network = network;
-    }
-
-    public boolean isCamera() {
-        return camera;
-    }
-
-    public void setCamera(boolean camera) {
         this.camera = camera;
     }
 
+    public Brand getBrand() {
+        return brand;
+    }
+
+
+
+    public Model getModel() {
+        return model;
+    }
+
+
+
+    public Memory getMemory() {
+        return memory;
+    }
+
+
+
+    public Network getNetwork() {
+        return network;
+    }
+
+
+
+    public Camera isCamera() {
+        return camera;
+    }
 
 
 
 
+    public boolean matches(PhoneSpec otherPhone) {
+        if (isSpecified(otherPhone.getBrand())) {
+            return this.brand == otherPhone.getBrand();
+        }
+
+        if (isPhoneSpecified(otherPhone)) {
+            return this.model==(otherPhone.getModel());
+        }
+
+        if (isSpecified(otherPhone.getNetwork())) {
+            return this.network == (otherPhone.getNetwork());
+        }
+
+        if (isSpecified(otherPhone.getMemory())) {
+            return this.memory == otherPhone.getMemory();
+        }
+
+        if (isSpecified(otherPhone.getCamera())) {
+            return this.camera == otherPhone.getTopWood();
+        }
+        return true;
+    }
+
+
+
+    private boolean isSpecified(Object field) {
+        return field != null;
+    }
+
+
+
+    private boolean isPhoneSpecified(PhoneSpec otherPhone) {
+        return (otherPhone.getModel() != null)
+                && (!otherPhone.getModel().equals(""));
+    }
 
 }
+
