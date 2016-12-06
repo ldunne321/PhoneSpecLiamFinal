@@ -1,7 +1,7 @@
 /**
  * Created by Liam on 17/11/2016.
  */
-public class Phone {
+public  class Phone extends Customer {
 
 
         private final String serialNumber;
@@ -9,10 +9,15 @@ public class Phone {
         private final PhoneSpec spec;
 
         public Phone(String serialNumber, double price, PhoneSpec spec) {
+
+
+
             this.serialNumber = serialNumber;
             this.price = price;
             this.spec = spec;
+
         }
+
 
         public String getSerialNumber() {
             return serialNumber;

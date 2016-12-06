@@ -1,7 +1,7 @@
 /**
  * Created by Liam on 17/11/2016.
  */
-public class Person {
+public class Customer {
 
 
     private String name;
@@ -11,7 +11,9 @@ public class Person {
     private String address;
 
 
-    public Person()
+
+
+    public Customer()
 
     {
 
@@ -19,13 +21,13 @@ public class Person {
 
 
 
-    public Person (String name, int phoneNumber, String address)
+    public Customer(String name, String address)
 
     {
 
         this.name=name;
 
-        this.phoneNumber = phoneNumber;
+
 
         this.address = address;
 
@@ -39,13 +41,7 @@ public class Person {
 
     }
 
-    public void setPhoneNumber(int phoneNumber)
 
-    {
-
-       this.phoneNumber = phoneNumber;
-
-    }
 
     public void setAddress(String address)
 
@@ -61,13 +57,6 @@ public class Person {
        return name;
     }
 
-    public int getphoneNumber()
-
-    {
-
-        return phoneNumber;
-
-    }
 
     public String getaddress()
 
