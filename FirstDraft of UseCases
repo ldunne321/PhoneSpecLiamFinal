@@ -16,35 +16,41 @@ day delivery.
 Fully Dressed
 
 PhoneSpec Use Case 1.4 Phone Delivery
-Goal in Context: Requestor wants phone delivered to home address.
+Goal in Context: Requestor wants phone delivered to chosen address.
 
 Stakeholders and interests
    Requestor: Wants phone delivered
-   Phone Spec Company: Wants to have phone delivered in 24 hours to adhere to company policy and reputation
-   Courier: Wants to get paid for deliveries.
+   Phone Spec Company: Wishes to have phone delivered in 24 hours to adhere to company policy and reputation.
+   Courier:Checks phone and customer details in Invenotory.
+   
+Precondition:Phone purchased.
+Success Guarantees:Requestor has Phone,correct budget ready to be debited.
+   
 
-Primary Actor: The user – Has ordered the phone and now must choose delivery type
-Preconditions: The user must have an account and must be logged into the account and must have purchased a phone
-Post conditions: The user’s phone has been delivered to address on users account
+Primary Actor: Customer – Has ordered the phone and now must choose delivery type
+
+
+
 
 Trigger: Requestor wants phone deliverd instead of collection
 
 
 Main Success Scenario:
-1.	User selects phone for delivery
-2.	User is notified that there is an extra charge for delivery rather than collection 
-3.	User agrees to extra charge.
-4.	User confirms address.
-5.	User is bought to the page for confirmation of item delivered.
-6. System notfies courier of item for delivery
-7.System sends customer address details to courier
-8.	Product arrives at address next day
+1.	Customer selects phone for delivery.
+2.      System sends a request to Courier.
+3.      Courier initates a search in their Inventory.
+4.      System checks Inventory based on Couriers Search.
+5.      System returns a result to Courier.
+6.	Courier matches the phone oredered to the Customers name and products serial number
+7.	Courier confirms phone to be delivered to Customer.
+8.	Phone arrives at address next day.
+9.      Customer confirms Phone has been delivered/
 Alternative Flows:
-	Incorrect address/doesn’t agree to charge
-1.	User provides an incorrect address.
-2.	Systems returns message of incorrect address corresponding to one used to set up account
-3.	User doesn’t agree to delivery charge.
-4.	User is brought back to optional selection of delivery or collection.
+1	Customer selects collection instead of Delivery.
+1b.     System confirms collection method. System ends process.
+
+3.	Custoemr doesn’t agree to delivery charge.
+3b.	Customer will have to start process again
 
 
 Brief
