@@ -4,11 +4,11 @@
 public class Customer {
 
 
-    private String name;
+    protected String name;
 
-    private int phoneNumber;
 
-    private String address;
+
+    protected String address;
 
 
 

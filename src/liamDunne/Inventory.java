@@ -16,7 +16,7 @@ public class Inventory {
         Phone phone;
         Customer customer;
         if (phoneSpec instanceof PhoneSpec) {
-            phone = new Phone(serialNumber, price, (PhoneSpec) phoneSpec);
+            phone = new Phone(serialNumber, price, (PhoneSpec) phoneSpec,name,address);
 
 
 
@@ -51,7 +51,7 @@ public class Inventory {
         return null;
     }
 
-    public List<Phone> search(PhoneSpec spec) {
+    public List<Phone> searchPhone(PhoneSpec spec) {
         List<Phone> matchingPhone = new ArrayList<>();
         for (Phone phone : inventory) {
             PhoneSpec phoneSpec = phone.getSpec();
