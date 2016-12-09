@@ -25,31 +25,25 @@ Stakeholders and interests
    
 Precondition:Phone purchased.
 Success Guarantees:Requestor has Phone,correct budget ready to be debited.
-   
-
 Primary Actor: Customer – Has ordered the phone and now must choose delivery type
-
-
-
-
 Trigger: Requestor wants phone deliverd instead of collection
 
 
 Main Success Scenario:
 1.	Customer selects phone for delivery.
-2.      System sends a request to Courier.
-3.      Courier initates a search in their Inventory.
-4.      System checks Inventory based on Couriers Search.
-5.      System returns a result to Courier.
+2.System sends a request to Courier.
+3.Courier initates a search in their Inventory.
+4.System checks Inventory based on Couriers Search.
+5. System returns a result to Courier.
 6.	Courier matches the phone oredered to the Customers name and products serial number
 7.	Courier confirms phone to be delivered to Customer.
 8.	Phone arrives at address next day.
-9.      Customer confirms Phone has been delivered/
+9.  Customer confirms Phone has been delivered
 Alternative Flows:
 1	Customer selects collection instead of Delivery.
 1b.     System confirms collection method. System ends process.
 
-3.	Custoemr doesn’t agree to delivery charge.
-3b.	Customer will have to start process again
+3.	Customer doesn’t agree to delivery charge.
+3b.Customer will have to start process again
 
 
