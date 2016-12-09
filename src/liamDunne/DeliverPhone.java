@@ -29,36 +29,35 @@ public class DeliverPhone {
 
             if (Choice == JOptionPane.OK_OPTION) {
 
+                 String ModelChoice = JOptionPane.showInputDialog(null, "Android or IOS:");
+                String NetworkChoice = JOptionPane.showInputDialog(null, "What network Vodafone or Meteor");
+                String MemoryChoice = JOptionPane.showInputDialog(null, "How much memory");
 
 
 
-                String g = JOptionPane.showInputDialog(null, "Android or IOS:");
-                String n = JOptionPane.showInputDialog(null, "What network Vodafone or Meteor");
-                String d = JOptionPane.showInputDialog(null, "How much memory");
-
-                if (g.equals("IOS")) {
-                    m.setModel(Model.IOS);
-                }else {
-
-                    if (g.equals("Android")) {
-
-                        m.setModel(Model.Android);
+                    if (ModelChoice.equals("IOS")) {
+                        m.setModel(Model.IOS);
                     } else {
 
-                    JOptionPane.showConfirmDialog(null, "We dont have that Model");
-                }
-                }
+                        if (ModelChoice.equals("Android")) {
 
-                if (n.equals("Meteor")) {
+                            m.setModel(Model.Android);
+                        } else {
+
+                            JOptionPane.showConfirmDialog(null, "We dont have that Model");
+                        }
+                    }
+
+                if (NetworkChoice.equals("Meteor")) {
                     m.setNetwork(Network.Meteor);
                 } else {
 
-                    if (n.equals("Vodafone")) {
+                    if (NetworkChoice.equals("Vodafone")) {
 
                         m.setNetwork(Network.vodafone);
                     } else {
 
-                        if (n.equals("Three")) {
+                        if (NetworkChoice.equals("Three")) {
 
                             m.setNetwork(Network.Three);
                         } else {
@@ -69,11 +68,11 @@ public class DeliverPhone {
                 }
 
 
-                if (d.equals("sixteenGB")) {
+                if (MemoryChoice.equals("sixteenGB")) {
                     m.setMemory(Memory.sixteenGB);
                 } else {
 
-                    if (d.equals("thirtytwoGB")) {
+                    if (MemoryChoice.equals("thirtytwoGB")) {
 
                         m.setMemory(Memory.thirtytwoGB);
                     } else {
@@ -90,7 +89,7 @@ public class DeliverPhone {
 
             }
             else if (Choice==JOptionPane.NO_OPTION){
-
+                JOptionPane.showMessageDialog(null,"Phone to be collected");
                 System.exit(0);
             }
         }
@@ -103,14 +102,14 @@ public class DeliverPhone {
                 for (Phone match : matchingPhones) {
                     if (match != null) {
                         PhoneSpec phoneSpec = match.getSpec();
-                        System.out.println("Is this your phone " +
-                                 phoneSpec.getModel() + " model" +
-                                phoneSpec.getMemory() + " network:\n   " +
-                                phoneSpec.getNetwork() + " memory,\n   " +"serial num\n" +
-                                match.getSerialNumber()+  " " +
-                                match.getName()+"name,\n"+" "+
-                                match.getaddress()+"address"+""+
-                                match.getPrice() + "!");
+                        System.out.println("Is this your phone " + ""+"model" + " "+
+                                 phoneSpec.getModel() + " " + "memory: " +"  "+
+                                phoneSpec.getMemory() + " " + " network: " + " "+
+                                phoneSpec.getNetwork() + "  " +"serial num" +
+                                match.getSerialNumber()+  " " + "name" +" "+
+                                match.getName()+ " "+"address"+"" +
+                                match.getaddress()+" "+ "Price"+ " "+
+                                match.getPrice() +".");
                     }
                 }
             } else {

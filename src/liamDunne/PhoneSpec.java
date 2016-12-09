@@ -3,7 +3,7 @@ import javafx.scene.Camera;
 /**
  * Created by Liam on 17/11/2016.
  */
-public  class PhoneSpec extends Customer {
+public  class PhoneSpec {
 
 
     private Model model;
@@ -35,6 +35,7 @@ public  class PhoneSpec extends Customer {
     }
 
 public Model setModel(Model model){
+
 
     this.model=model;
     return  model;

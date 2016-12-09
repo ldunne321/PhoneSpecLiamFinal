@@ -27,7 +27,7 @@ public  class Phone extends Customer {
             return price;
         }
 
-        public void setPrice(final float newPrice) {
+        public void setPrice(final double newPrice) {
             this.price = newPrice;
         }
 
