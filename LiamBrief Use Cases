@@ -1,0 +1,219 @@
+Use Cases
+OnlinePurchase
+InstoreShop
+Customer service Phone
+Customer service Online
+Surveys
+Phone Delivery
+Subscription
+
+Success
+Buying Phones Online
+1 Mary turns on her device that is connected to the internet.
+2 Mary types type’s in the name of phone selling company.
+3 Mary clicks the correct link.
+4 Mary browses the website.
+4.1 Mary clicks into build phones.
+4.2 Mary builds her phone with her personal specifications.
+4.3 Mary clicks a phone she likes.
+4.4 Mary reads through the description.
+4.5 Mary selects a network.
+4.6 Mary adds item to cart
+5 Mary goes to cart.
+	5.1 Mary clicks sign up as member
+5.2 Mary enters her details
+5.3 Mary clicks register
+5.4 Mary leaves site to confirm membership
+5.5 Mary receives a confirmation email
+5.6 Mary confirms membership and returns to site 
+6 Mary enters her card details 
+7 Mary clicks buy
+8 Mary views receipt
+	8.1 Mary prints receipt
+9 Mary leaves the site
+Alternate Scenarios
+•	Mary clicks any other option on the website
+•	Mary clicks
+	
+Buying Phones in Shop
+1 Ted walks into phone shop
+2 Ted browses store
+3 Larry approaches Ted and asks would he like some help
+4 Ted says no and continues browsing because Ted likes to take his time.
+5 Ted picks out specific phone parts and calls Larry over
+6 Larry confirms his choice
+7 Larry goes in the back to put the parts together
+8 Ted waits for Larry to come back
+9 Ted see’s the assembled phone
+10 Ted pays for the phone
+11 Ted gets his receipt. 
+12 Ted leaves the store.
+Alternate Scenarios
+(a)
+1 Ted walks into the phone shop
+2 Ted browses store
+3 Ted Doesn’t see anything he wants and Leaves the store
+(b)
+1 Ted walks into phone shop
+2 Ted browses store
+3 Larry approaches Ted and asks would he like some help
+4 Ted asks for help.
+5 Larry shows Ted some popular phone parts
+6 Ted picks the parts he wants
+7 Larry goes in the back to put the parts together
+8 Ted waits for Larry to come back
+9 Ted see’s the assembled phone
+10 Ted pays for the phone
+11 Ted gets his receipt. 
+12 Ted leaves the store.
+(c)
+1 Ted walks into phone shop
+2 Ted browses store
+3 Ted inquiries about phone parts
+4 Larry checks to see if he has the parts
+5 Larry does not have the parts
+6 Ted thanks Larry and leaves the store 
+
+
+Customer Service Phone
+Success
+1 Mary rings up customer service.
+2 Mary is greeted by a member of staff.
+3 Mary asks about a problem in relation to her phone.
+4 The member of customer services provides Mary with a solution.
+5 Mary says goodbye.
+6 Mary hangs up.
+Alternative results
+(a)
+1 The member of customer services is busy and puts Mary on hold.
+2 Mary listens to music as she waits for a response
+3 The member of customer services takes Mary off hold and gives her a solution.
+4 Mary thanks the member of customer services and hangs up.
+
+(b)
+1 The member of customer services is unable to come up with a solution and puts Mary on hold.
+2 Mary listens to music as she waits for a response
+3 The member of customer services takes Mary off hold and connects her to her a more suitable member of staff with more experience with Mary’s problem.
+4 Mary gets a solution from this member of staff.
+5 Mary thanks the member of customer services and hangs up.
+(c)
+1 The member of customer services is unable to come up with a solution and puts Mary on hold.
+2 Mary listens to music as she waits for a response
+3 The member of customer services takes Mary off hold and connects her to her a more suitable member of staff with more experience with Mary’s problem.
+4 This member of staff is unable to find a solution and Mary is put on hold several times. 
+4 Mary does not get a solution.
+5 Mary thanks whomever is speaking and hangs up.
+(d)
+1 The member of customer services is unable to come up with a solution and puts Mary on hold.
+2 Mary listens to music as she waits for a response
+3 The member of customer services takes Mary off hold and connects her to her a more suitable member of staff with more experience with Mary’s problem.
+4 This member of staff is unable to find a solution and Mary is put on hold several times. 
+4 Mary does gets a solution for her problem.
+5 Mary thanks whomever is speaking and hangs up.
+Customer Service Online Forum
+1 Mary signs up to phone shop’s customer service forum
+2 Mary posts a question in relation to her phone.
+3 Mary waits for a response
+4 Mary’s question is answered 
+5 Mary logs out.
+Alternate Scenarios
+•	Mary does not word her question correctly
+•	Mary’s question is answered incorrectly
+
+
+
+
+Survey
+Success
+1 Mary open’s her emails
+2 Mary clicks on a survey.
+3 Mary answers the questions on the survey.
+4 Mary confirms that the survey is completed.
+5 Mary submits the survey.
+
+Alternate Scenarios
+•	Mary finds the survey on the website
+•	Mary is given a phone survey.
+•	Mary is asked to review it via social media
+
+
+
+
+Phone Delivery
+-Cutomer has just bought phone
+-Customer chooses the delivery checkbox
+-Customer validates that his correct address is on account
+-System notifies Customer that the product will be delivered in one day.
+-Customer agrees to terms and conditons of delivery
+-Customer recieves package next day by Courier
+
+
+Phone Insurance
+ Primary Actor : Customer
+ Level:User Goal
+-Customer just lost his phone
+-Customer contacts CustomerService by email or rings through friends phone
+-Customer vervies security questions to a member of staff.
+-Staff member shuts down old phone for future use
+-Staff member confirms Customers insurance is up to date
+-Staff member confirms Customers address.
+-Customer's replacment phone is sent to address on account
+-Phone to be delivered 24 hours from when request was put in
+
+Promotion
+Primary Actor:Customer
+Level:User Goal
+-Customer wants to find out about latest deals.
+-Customer looks up PhoneSpec On Social Media
+-Customer likes or follows PhoneSpec page
+-Customer is notified of daily promotions
+-Customer is enticed to avail of these offers.
+-Customer buys something he likes from viewing the Social media posts
+
+
+Subscription-
+Primary Actor: Customer
+Level:User Goal
+
+-Customer wants to keep up to date with all latest deals
+-Customer logs onto account
+-Customer ticks check box to keep up to date with all latest deals
+-System puts account holders number into subscrption table in database
+-Weekly sms is sent to customer alerting new deals and promotions
+
+
+
+
+
+Phone Delivery
+-Cutomer has just bought phone
+-Customer chooses the delivery checkbox
+-Customer validates that his correct address is on account
+-System notifies Customer that the product will be delivered in one day.
+-Customer agrees to terms and conditons of delivery
+-Customer recieves package next day by Courier
+
+
+Phone Insurance
+ Primary Actor : Customer
+ Level:User Goal
+-Customer just lost his phone
+-Customer contacts CustomerService by email or rings through friends phone
+-Customer vervies security questions to a member of staff.
+-Staff member shuts down old phone for future use
+-Staff member confirms Customers insurance is up to date
+-Staff member confirms Customers address.
+-Customer's replacment phone is sent to address on account
+-Phone to be delivered 24 hours from when request was put in
+
+
+Subscription-
+Primary Actor: Customer
+Level:User Goal
+
+-Customer wants to keep up to date with all latest deals
+-Customer logs onto account
+-Customer ticks check box to keep up to date with all latest deals
+-System puts account holders number into subscrption table in database
+-Weekly sms is sent to customer alerting new deals and promotions
+

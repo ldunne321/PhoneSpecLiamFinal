@@ -1,0 +1,49 @@
+
+NOTE THIS WAS COMMITTED TO A PREVIOUSLY CREATED REPOSITORY
+
+Casual-
+
+Phone Delivery-
+The Buyer has just bought a phone online. The Buyer chooses delivery type of courier delivery. The Buyer has to book the next day off work as he
+wants to be at home to play with his brand new phone. The Buyer is up early the next morning. Courier arrives at his house at 9 o clock.
+The Buyer signs the electronic device. The Buyer proceeds to open and start up his new device
+
+Phone Insurance-
+Customer is at a wedding and has a bit too much to drink. Customer wakes up next morning and cant find hsi phone. Customer rings 
+Phone Spec HeadQuarters with a friends phone. Customer gives security details. Replacement phone is sent to customers address for next 
+day delivery.
+
+Fully Dressed
+
+PhoneSpec Use Case 1.4 Phone Delivery
+Goal in Context: Requestor wants phone delivered to chosen address.
+
+Stakeholders and interests
+   Requestor: Wants phone delivered
+   Phone Spec Company: Wishes to have phone delivered in 24 hours to adhere to company policy and reputation.
+   Courier:Checks phone and customer details in Invenotory.
+   
+Precondition:Phone purchased.
+Success Guarantees:Requestor has Phone,correct budget ready to be debited.
+Primary Actor: Customer – Has ordered the phone and now must choose delivery type
+Trigger: Requestor wants phone deliverd instead of collection
+
+
+Main Success Scenario:
+1.	Customer selects phone for delivery.
+2.System sends a request to Courier.
+3.Courier initates a search in their Inventory.
+4.System checks Inventory based on Couriers Search.
+5. System returns a result to Courier.
+6.	Courier matches the phone oredered to the Customers name and products serial number
+7.	Courier confirms phone to be delivered to Customer.
+8.	Phone arrives at address next day.
+9.  Customer confirms Phone has been delivered
+Alternative Flows:
+1	Customer selects collection instead of Delivery.
+1b.     System confirms collection method. System ends process.
+
+3.	Customer doesn’t agree to delivery charge.
+3b.Customer will have to start process again
+
+
